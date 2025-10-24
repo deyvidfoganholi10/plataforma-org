@@ -1,0 +1,257 @@
+/* ===== Geral ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f0f4f8;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(90deg, #00695c, #00897b);
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ===== Hero ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #26a69a, #80cbc4);
+  color: #fff;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-image img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== Botão ===== */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #004d40;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #002f23;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* ===== Seções ===== */
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #00695c;
+}
+
+/* ===== Sobre ===== */
+.sobre {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre p {
+  max-width: 500px;
+  font-size: 1.1rem;
+}
+
+.sobre-image img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== Galeria ===== */
+.galeria-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria-container img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.galeria-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== Projetos ===== */
+.projetos-lista {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projeto {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.projeto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.projeto img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* ===== Formulário ===== */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+form label {
+  font-weight: 500;
+}
+
+form input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #26a69a;
+  box-shadow: 0 0 8px rgba(38,166,154,0.5);
+}
+
+form button {
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #004d40;
+  color: white;
+  margin-top: 40px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-image img,
+  .hero-image img {
+    width: 100%;
+  }
+
+  .projetos-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria-container img {
+    width: 90%;
+  }
+}
